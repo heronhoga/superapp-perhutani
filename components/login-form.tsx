@@ -27,7 +27,9 @@ export function LoginForm() {
 
     const parsed = schema.safeParse({ identifier, password })
     if (!parsed.success) {
-      setError(parsed.error.errors[0]?.message ?? "Data tidak valid")
+      // ✅ Gunakan akses aman ke message
+      const message = parsed.error.errors?.[0]?.message ?? "Data tidak valid"
+      setError(message)
       return
     }
 
