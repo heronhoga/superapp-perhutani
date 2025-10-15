@@ -8,7 +8,7 @@ export function SiteHeader() {
     <header className="w-full border-b bg-card">
       <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
         <Link href="/" className="inline-flex items-center gap-2">
-          <span aria-hidden className="h-6 w-6 rounded-md bg-primary" />
+          <img src="/perhutanionelogo.png" alt="Logo Perhutanione" className="h-6 w-6" />
           <span className="font-semibold">Perhutanione</span>
         </Link>
 

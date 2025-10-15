@@ -1,4 +1,5 @@
 import { FeatureCard } from "./feature-card"
+import { Activity, FileText, ShieldCheck, Map, Users, Database } from "lucide-react"
 
 export function FeatureSection() {
   return (
@@ -11,26 +12,32 @@ export function FeatureSection() {
           <FeatureCard
             title="Monitoring Kawasan"
             description="Pantau kondisi hutan, tutupan lahan, dan aktivitas lapangan secara berkala."
+            icon={<Activity className="h-5 w-5" aria-hidden />}
           />
           <FeatureCard
             title="Pelaporan Cepat"
             description="Buat laporan harian, insiden, dan progres pekerjaan langsung dari lokasi."
+            icon={<FileText className="h-5 w-5" aria-hidden />}
           />
           <FeatureCard
             title="Perizinan Terpadu"
             description="Kelola perizinan pemanfaatan hasil hutan dengan alur yang transparan."
+            icon={<ShieldCheck className="h-5 w-5" aria-hidden />}
           />
           <FeatureCard
             title="Pemetaan Interaktif"
             description="Lihat peta interaktif untuk blok, petak, dan aksesibilitas wilayah."
+            icon={<Map className="h-5 w-5" aria-hidden />}
           />
           <FeatureCard
             title="Kolaborasi Tim"
             description="Komunikasi lintas unit, tugaskan pekerjaan, dan tinjau hasil."
+            icon={<Users className="h-5 w-5" aria-hidden />}
           />
           <FeatureCard
             title="Integrasi Data"
             description="Sinkron dengan sistem internal untuk data yang konsisten dan akurat."
+            icon={<Database className="h-5 w-5" aria-hidden />}
           />
         </div>
       </div>
