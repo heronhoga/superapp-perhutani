@@ -6,7 +6,8 @@ import { usePathname } from "next/navigation";
 
 export function SiteHeader() {
   const pathname = usePathname();
-  const isApp = pathname?.startsWith("/home");
+  const isHome = pathname?.startsWith("/home");
+  const isLogin = pathname?.startsWith("/login");
 
   return (
     <header className="w-full border-b bg-card">
@@ -20,7 +21,7 @@ export function SiteHeader() {
           <span className="font-semibold">OnePerhutani</span>
         </Link>
 
-        {!isApp && (
+        {(!isHome && !isLogin) && (
           <nav className="hidden md:flex items-center gap-6">
             <Link
               href="#fitur"
@@ -37,7 +38,7 @@ export function SiteHeader() {
           </nav>
         )}
 
-        {!isApp && (
+        {!isHome && (
           <div className="flex items-center gap-3">
             <Link href="/login" aria-label="Buka halaman masuk">
               <Button variant="default" className="min-w-24">
@@ -47,7 +48,7 @@ export function SiteHeader() {
           </div>
         )}
 
-        {isApp && (
+        {isHome && (
           <div className="flex items-center gap-3">
             <Link href="/login" aria-label="Buka halaman masuk">
               <Button variant="destructive" className="min-w-24">
