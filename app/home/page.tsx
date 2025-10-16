@@ -10,7 +10,7 @@ export default function AppHomePage() {
       <section className="mx-auto max-w-6xl px-4 py-12 md:py-16">
         <div className="max-w-2xl">
           <h1 className="text-2xl md:text-3xl font-semibold text-balance">Beranda</h1>
-          <p className="mt-2 text-muted-foreground">Selamat datang di Perhutanione. Pilih modul untuk mulai bekerja.</p>
+          <p className="mt-2 text-muted-foreground">Selamat datang di OnePerhutani. Pilih modul untuk mulai bekerja.</p>
         </div>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
