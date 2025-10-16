@@ -1,13 +1,14 @@
 "use client"
 
 import type React from "react"
-
+import { useRouter } from "next/navigation"
 import { useState } from "react"
 import { z } from "zod"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import Link from "next/link"
 
 const schema = z.object({
   identifier: z.string().min(3, "Masukkan NPK atau Email yang valid"),
@@ -17,6 +18,7 @@ const schema = z.object({
 export function LoginForm() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const router = useRouter()
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -27,9 +29,7 @@ export function LoginForm() {
 
     const parsed = schema.safeParse({ identifier, password })
     if (!parsed.success) {
-      // ✅ Gunakan akses aman ke message
-      const message = parsed.error.errors?.[0]?.message ?? "Data tidak valid"
-      setError(message)
+      setError(parsed.error.errors[0]?.message ?? "Data tidak valid")
       return
     }
 
@@ -39,7 +39,7 @@ export function LoginForm() {
       await new Promise((r) => setTimeout(r, 900))
       // eslint-disable-next-line no-console
       console.log("[v0] Login mock:", { identifier, password: "******" })
-      alert("Berhasil login (mock). Tambahkan integrasi autentikasi sesuai kebutuhan.")
+      router.push("/app")
     } catch {
       setError("Terjadi kesalahan. Coba lagi.")
     } finally {
@@ -50,7 +50,7 @@ export function LoginForm() {
   return (
     <Card className="w-full max-w-md mx-auto">
       <CardHeader>
-        <CardTitle>Masuk ke OnePerhutani</CardTitle>
+        <CardTitle>Masuk ke Perhutanione</CardTitle>
         <CardDescription className="text-muted-foreground">
           Gunakan NPK atau Email beserta kata sandi Anda.
         </CardDescription>
@@ -91,6 +91,13 @@ export function LoginForm() {
             {loading ? "Memproses..." : "Masuk"}
           </Button>
         </form>
+
+        <div className="mt-3 text-center">
+          <Link href="/home" className="text-sm text-primary hover:underline">
+            Lewati, masuk sebagai demo
+          </Link>
+        </div>
+
         <p className="mt-4 text-xs text-muted-foreground">
           Dengan masuk, Anda menyetujui ketentuan penggunaan dan kebijakan privasi.
         </p>
