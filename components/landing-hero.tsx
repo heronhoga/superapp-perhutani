@@ -10,19 +10,16 @@ export function LandingHero() {
             OnePerhutani
           </h1>
           <p className="mt-4 text-pretty text-muted-foreground md:text-lg">
-            Satu aplikasi untuk operasional Perhutani: monitoring kawasan,
-            pelaporan, perizinan, dan kolaborasi lapangan.
+            Platform terpadu Perhutani yang menghubungkan layanan internal,
+            publik, dan sosial dalam satu ekosistem digital. OnePerhutani hadir
+            untuk meningkatkan efisiensi operasional, transparansi pengelolaan
+            hutan, serta memperkuat kolaborasi antara Perhutani dan masyarakat.
           </p>
+
           <div className="mt-6 flex items-center gap-3">
             <Link href="/login">
               <Button size="lg">Masuk Sekarang</Button>
             </Link>
-            <a
-              href="#fitur"
-              className="text-sm md:text-base text-foreground underline underline-offset-4"
-            >
-              Lihat Fitur
-            </a>
           </div>
         </div>
 
