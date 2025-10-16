@@ -14,7 +14,7 @@ export default function AppHomePage() {
         </div>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <Link href="/app/operasional" className="block h-full" aria-label="Buka Operasional Internal">
+          <Link href="/home/operasional" className="block h-full" aria-label="Buka Operasional Internal">
             <FeatureCard
               title="Operasional Internal"
               description="Aktivitas harian Perhutani: manajemen sumber daya hutan, pemantauan lapangan, koordinasi antarunit."
@@ -22,7 +22,7 @@ export default function AppHomePage() {
             />
           </Link>
 
-          <Link href="/app/layanan" className="block h-full" aria-label="Buka Layanan Publik dan Sosial">
+          <Link href="/home/layanan" className="block h-full" aria-label="Buka Layanan Publik dan Sosial">
             <FeatureCard
               title="Layanan Publik & Sosial"
               description="Akses informasi dan layanan untuk masyarakat: kemitraan, konservasi, pelaporan partisipatif."
@@ -30,7 +30,7 @@ export default function AppHomePage() {
             />
           </Link>
 
-          <Link href="/app/administrasi" className="block h-full" aria-label="Buka Administrasi dan Pelaporan">
+          <Link href="/home/administrasi" className="block h-full" aria-label="Buka Administrasi dan Pelaporan">
             <FeatureCard
               title="Administrasi & Pelaporan"
               description="Kelola administrasi dan pelaporan terintegrasi: pengumpulan data, pelacakan kinerja, penyusunan laporan."
@@ -39,7 +39,7 @@ export default function AppHomePage() {
           </Link>
 
           {/* Kartu Pengaturan */}
-          <Link href="/app/pengaturan" className="block h-full" aria-label="Buka Pengaturan">
+          <Link href="/home/pengaturan" className="block h-full" aria-label="Buka Pengaturan">
             <FeatureCard
               title="Pengaturan"
               description="Atur preferensi aplikasi, notifikasi, tema, dan pilihan lainnya."
@@ -48,7 +48,7 @@ export default function AppHomePage() {
           </Link>
 
           {/* Kartu Profil */}
-          <Link href="/app/profil" className="block h-full" aria-label="Buka Profil">
+          <Link href="/home/profil" className="block h-full" aria-label="Buka Profil">
             <FeatureCard
               title="Profil"
               description="Lihat informasi akun Anda dan kelola data pribadi."
