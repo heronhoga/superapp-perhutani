@@ -7,7 +7,7 @@ export function LandingHero() {
       <div className="mx-auto max-w-6xl px-4 py-16 md:py-24 grid gap-8 md:grid-cols-2 items-center">
         <div>
           <h1 className="text-balance text-3xl md:text-5xl font-semibold">
-            Perhutanione
+            OnePerhutani
           </h1>
           <p className="mt-4 text-pretty text-muted-foreground md:text-lg">
             Satu aplikasi untuk operasional Perhutani: monitoring kawasan,
@@ -30,7 +30,7 @@ export function LandingHero() {
           <div className="aspect-[4/3] w-full rounded-lg border bg-card p-2">
             <img
               src="/perhutani.png"
-              alt="Ilustrasi dashboard Perhutanione"
+              alt="Ilustrasi dashboard OnePerhutani"
               className="h-full w-full rounded-md object-cover"
             />
           </div>

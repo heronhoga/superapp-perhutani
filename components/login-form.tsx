@@ -50,7 +50,7 @@ export function LoginForm() {
   return (
     <Card className="w-full max-w-md mx-auto">
       <CardHeader>
-        <CardTitle>Masuk ke Perhutanione</CardTitle>
+        <CardTitle>Masuk ke OnePerhutani</CardTitle>
         <CardDescription className="text-muted-foreground">
           Gunakan NPK atau Email beserta kata sandi Anda.
         </CardDescription>

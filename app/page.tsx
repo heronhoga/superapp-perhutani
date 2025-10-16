@@ -10,10 +10,10 @@ export default function HomePage() {
       <LandingHero />
       <section id="tentang" className="mx-auto max-w-6xl px-4 py-12 md:py-16">
         <h2 className="text-2xl md:text-3xl font-semibold text-balance">
-          Tentang Perhutanione
+          Tentang OnePerhutani
         </h2>
         <p className="mt-2 text-muted-foreground">
-          Perhutanione adalah superapp yang membantu tim Perhutani mengelola
+          OnePerhutani adalah superapp yang membantu tim Perhutani mengelola
           hutan secara modern, efisien, dan berkelanjutan—dari kantor hingga
           lapangan.
         </p>

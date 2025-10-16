@@ -3,7 +3,7 @@ export function Footer() {
     <footer className="w-full border-t bg-card">
       <div className="mx-auto max-w-6xl px-4 py-8 grid gap-4 md:grid-cols-3">
         <div>
-          <p className="font-semibold">Perhutanione</p>
+          <p className="font-semibold">OnePerhutani</p>
           <p className="text-sm text-muted-foreground">Superapp untuk pengelolaan hutan berkelanjutan.</p>
         </div>
         <div>
@@ -23,11 +23,11 @@ export function Footer() {
         </div>
         <div>
           <p className="font-semibold">Kontak</p>
-          <p className="text-sm text-muted-foreground">support@perhutanione.app</p>
+          <p className="text-sm text-muted-foreground">support@oneperhutani.app</p>
         </div>
       </div>
       <div className="border-t py-4 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Perhutanione. Semua hak dilindungi.
+        © {new Date().getFullYear()} OnePerhutani. Semua hak dilindungi.
       </div>
     </footer>
   )

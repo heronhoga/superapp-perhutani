@@ -8,8 +8,8 @@ export function SiteHeader() {
     <header className="w-full border-b bg-card">
       <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
         <Link href="/" className="inline-flex items-center gap-2">
-          <img src="/perhutanionelogo.png" alt="Logo Perhutanione" className="h-6 w-6" />
-          <span className="font-semibold">Perhutanione</span>
+          <img src="/oneperhutani.jpg" alt="Logo OnePerhutani" className="h-6 w-6" />
+          <span className="font-semibold">OnePerhutani</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">
